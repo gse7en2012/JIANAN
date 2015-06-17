@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>东航物流成本审批系统</title>
+    <link rel="stylesheet" href="css/com.css"/>
+    <style>
+        .ver-box {
+            overflow: hidden;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+        .ver-box li {
+            float: left;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            line-height: 26px;
+            font-size: 14px;
+        }
+        .ver-box li label {
+            float: left;
+            text-align: right;
+            width: 70px;
+            margin-right: 10px;
+        }
+        .ver-box input {
+            border: none;
+            background: #fff;
+            width: 156px;
+            height: 26px;
+        }
+        .ver-box select {
+            width: 156px;
+            border: none;
+            height: 26px;
+        }
+        .ver-box option {
+            text-align: center;
+        }
+        .submit-btn {
+            position: absolute;
+            width: 76px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            color: #fff;
+            background: #2a79ae;
+            font-size: 18px;
+            right: 44px;
+            top: 100px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .pager{text-align: center;width: 100%;margin:20px 0;}
+        .pager a{margin: 5px;}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="header-inner">
+            <div class="header-info">
+                <p><span class="header-icon"></span>当前登陆用户：<span class="bold">王建民</span></p>
+                <a class="header-btn" href="#">退出系统</a>
+
+                <p class="header-date">2015年5月28日 星期四</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="nav">
+            <ul class="nav-box">
+                <li class="nav-header">审批管理</li>
+                <li class="cur"><span class="nav-icon icon-1"></span>待办事项</li>
+                <li><span class="nav-icon icon-2"></span>已办事项</li>
+                <li><span class="nav-icon icon-3"></span>待办授权</li>
+                <li class="nav-header">申请管理</li>
+                <li><span class="nav-icon icon-4"></span>个人报销</li>
+                <li><span class="nav-icon icon-5"></span>通用账单</li>
+            </ul>
+        </div>
+        <div class="content">
+            <p class="content-local">>个人任务管理列表--共搜索到 <span class="red">20</span> 条数据</p>
+
+            <form>
+                <ul class="ver-box">
+                    <li><label>单位</label><input></li>
+                    <li><label>编号</label><input></li>
+                    <li><label>金额</label><input></li>
+                    <li><label>申请时间</label><input></li>
+                    <li><label>申请部门</label><input></li>
+                    <li><label>经办人</label><input></li>
+                    <li><label>摘要</label><input></li>
+                    <li><label>审批时间</label><input></li>
+                    <li><label>类型</label><select>
+                        <option>--------请选择--------</option>
+                        <option>是</option>
+                    </select></li>
+                    <li><label>是否打印</label><select>
+                        <option>--------请选择--------</option>
+                        <option>否</option>
+                    </select></li>
+                </ul>
+                <a class="submit-btn" href="#">查询</a>
+            </form>
+            <table>
+                <tr>
+                    <th width="6%">序号</th>
+                    <th width="16%">单位</th>
+                    <th width="4%">编号</th>
+                    <th width="8%">金额</th>
+                    <th width="10%">摘要</th>
+                    <th width="10%">申请部门</th>
+                    <th width="8%">经办人</th>
+                    <th width="12%">申请时间</th>
+                    <th width="10%">类型</th>
+                    <th width="20%">操作</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>中货航（总部）业务实体</td>
+                    <td>2015E320814</td>
+                    <td>787878.61</td>
+                    <td>医药费报销</td>
+                    <td>飞行部</td>
+                    <td>王年红</td>
+                    <td>2016-04-04</td>
+                    <td>个人报销单</td>
+                    <td><a class="red">办理任务</a><br><a class="blue">查看当前流程图</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>中货航（总部）业务实体医药费报销医药费报销</td>
+                    <td>2015E320814</td>
+                    <td>787878.61</td>
+                    <td>医药费报医药费报销医药费报销销</td>
+                    <td>飞行部</td>
+                    <td>王年红</td>
+                    <td>2016-04-04</td>
+                    <td>个人报销单</td>
+                    <td><a class="red">办理任务</a><br><a class="blue">查看当前流程图</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>中货航（总部）业务实体</td>
+                    <td>2015E320542434234234814</td>
+                    <td>787878.61</td>
+                    <td>医药费报销</td>
+                    <td>飞行部</td>
+                    <td>王年红</td>
+                    <td>2016-04-04</td>
+                    <td>个人报销单</td>
+                    <td><a class="red">办理任务</a><br><a class="blue">查看当前流程图</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>中货航（总部）业务实体</td>
+                    <td>2015E320814</td>
+                    <td>787878.61</td>
+                    <td>医药费报销</td>
+                    <td>飞行部</td>
+                    <td>王年红</td>
+                    <td>2016-04-04</td>
+                    <td>个人报销单</td>
+                    <td><a class="red">办理任务</a><br><a class="blue">查看当前流程图</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>中货航（总部）业务实体</td>
+                    <td>2015E320814</td>
+                    <td>787878.61</td>
+                    <td>医药费报销</td>
+                    <td>飞行部</td>
+                    <td>王年红</td>
+                    <td>2016-04-04</td>
+                    <td>个人报销单</td>
+                    <td><a class="red">办理任务</a><br><a class="blue">查看当前流程图</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>中货航（总部）业务实体</td>
+                    <td>2015E320814</td>
+                    <td>787878.61</td>
+                    <td>医药费报销</td>
+                    <td>飞行部</td>
+                    <td>王年红</td>
+                    <td>2016-04-04</td>
+                    <td>个人报销单</td>
+                    <td><a class="red">办理任务</a><br><a class="blue">查看当前流程图</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>中货航（总部）业务实体</td>
+                    <td>2015E320814</td>
+                    <td>787878.61</td>
+                    <td>医药费报销</td>
+                    <td>飞行部</td>
+                    <td>王年红</td>
+                    <td>2016-04-04</td>
+                    <td>个人报销单</td>
+                    <td><a class="red">办理任务</a><br><a class="blue">查看当前流程图</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>中货航（总部）业务实体</td>
+                    <td>2015E320814</td>
+                    <td>787878.61</td>
+                    <td>医药费报销医药费报销医药费报销</td>
+                    <td>飞行部</td>
+                    <td>王年红</td>
+                    <td>2016-04-04</td>
+                    <td>个人报销单</td>
+                    <td><a class="red">办理任务</a><br><a class="blue">查看当前流程图</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>中货航（总部）业务实体</td>
+                    <td>2015E320814</td>
+                    <td>787878.61</td>
+                    <td>医药费报销</td>
+                    <td>飞行部</td>
+                    <td>王年红</td>
+                    <td>2016-04-04</td>
+                    <td>个人报销单</td>
+                    <td><a class="red">办理任务</a><br><a class="blue">查看当前流程图</a></td>
+                </tr>
+            </table>
+            <p class="pager">
+                <a href="#">上一页</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">下一页</a>
+            </p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
