@@ -8,7 +8,7 @@
         .ver-box {
             overflow: hidden;
             margin-top: 15px;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
         .ver-box li {
             float: left;
@@ -17,11 +17,12 @@
             margin-top: 10px;
             line-height: 26px;
             font-size: 14px;
+            margin-right: 20px;
         }
         .ver-box li label {
             float: left;
             text-align: right;
-            width: 70px;
+            width: 90px;
             margin-right: 10px;
         }
         .ver-box input {
@@ -38,20 +39,9 @@
         .ver-box option {
             text-align: center;
         }
-        .submit-btn {
-            position: absolute;
-            width: 76px;
-            height: 36px;
-            line-height: 36px;
-            text-align: center;
-            color: #fff;
-            background: #2a79ae;
-            font-size: 18px;
-            right: 44px;
-            top: 100px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
+        .ver-box .btn{background: #225ca3;border-radius: 3px;font-size: 14px;float: left;height: 26px;line-height: 26px;width: 60px;text-decoration: none;color: #fff;text-align: center;}
+
+        .split{border-bottom: 1px dotted #34b2ec;margin: 0 14px 20px;}
         .pager{text-align: center;width: 100%;margin:20px 0;}
         .pager a{margin: 5px;}
     </style>
@@ -85,25 +75,18 @@
 
             <form>
                 <ul class="ver-box">
-                    <li><label>单位</label><input></li>
-                    <li><label>编号</label><input></li>
-                    <li><label>金额</label><input></li>
-                    <li><label>申请时间</label><input></li>
-                    <li><label>申请部门</label><input></li>
-                    <li><label>经办人</label><input></li>
-                    <li><label>摘要</label><input></li>
-                    <li><label>审批时间</label><input></li>
-                    <li><label>类型</label><select>
+                    <li><label>授权开始日期</label><input></li>
+                    <li><label>授权结束日期</label><input></li>
+
+                    <li><label>受委托人</label><select>
                         <option>--------请选择--------</option>
                         <option>是</option>
                     </select></li>
-                    <li><label>是否打印</label><select>
-                        <option>--------请选择--------</option>
-                        <option>否</option>
-                    </select></li>
+                    <li><a href="#" class="btn">授权</a></li>
                 </ul>
-                <a class="submit-btn" href="#">查询</a>
+
             </form>
+            <p class="split"></p>
             <table>
                 <tr>
                     <th width="6%">序号</th>

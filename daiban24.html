@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>东航物流成本审批系统</title>
+    <link rel="stylesheet" href="css/com.css"/>
+    <style>
+        .ver-box {
+            overflow: hidden;
+            margin-top:35px;
+            margin-bottom: 30px;
+        }
+        .ver-box li {
+            float: left;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            line-height: 26px;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        .ver-box li label {
+            float: left;
+            text-align: right;
+            width: 50px;
+            margin-right: 10px;
+        }
+        .ver-box input {
+            border: none;
+            background: #fff;
+            width: 156px;
+            height: 26px;
+        }
+        .ver-box select {
+            width: 156px;
+            border: none;
+            height: 26px;
+        }
+        .ver-box option {
+            text-align: center;
+        }
+
+
+
+        /*本页独有style*/
+        .back-btn {  position: absolute; width: 76px;  height: 36px; line-height: 36px; text-align: center;color: #fff;background: #518cae;font-size: 16px; left: 12px;top:12px;border-radius: 3px;text-decoration: none; }
+        h2{font-weight: bold;color: #183e6d;font-size: 24px;text-align: center;line-height: 2;margin:0 10px;margin-top: 15px;}
+        h3{font-weight: bold;color: #183e6d;font-size: 18px;text-align: center;line-height: 2;}
+        .number{font-weight: bold;color: #183e6d;font-size: 18px;text-align: right;line-height: 2;margin-right: 110px;}
+        .tb1 .gray{background: #dce1e7;}
+        .ver-box .btn{background: #225ca3;border-radius: 3px;font-size: 14px;float: left;height: 26px;line-height: 26px;width: 60px;text-decoration: none;color: #fff;text-align: center;}
+        .agree-btn{background: #ef7c0e;width: 74px;height: 36px;line-height: 36px;font-size: 18px;text-align: center;color: #fff;float: right;text-decoration: none;border-radius: 4px;font-weight: bold;margin-left: 15px;}
+        .disagree-btn{background: #518cae;width: 74px;height: 36px;line-height: 36px;font-size: 18px;text-align: center;color: #fff;float: right;text-decoration: none;border-radius: 4px;font-weight: bold;margin-left: 15px;}
+        textarea{height: 74px;width: 280px;padding: 5px;resize: none;border-radius: 5px;border: 1px solid #ccc}
+
+        /*覆盖com.css设置*/
+        table{margin: 15px;margin-bottom: 25px;}
+        table td{background: #eff3f8;text-align: center;padding: 8px 10px;}
+        .red{color: red;}
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="header-inner">
+            <div class="header-info">
+                <p><span class="header-icon"></span>当前登陆用户：<span class="bold">王建民</span></p>
+                <a class="header-btn" href="#">退出系统</a>
+
+                <p class="header-date">2015年5月28日 星期四</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="nav">
+            <ul class="nav-box">
+                <li class="nav-header">审批管理</li>
+                <li class="cur"><span class="nav-icon icon-1"></span>待办事项</li>
+                <li><span class="nav-icon icon-2"></span>已办事项</li>
+                <li><span class="nav-icon icon-3"></span>待办授权</li>
+                <li class="nav-header">申请管理</li>
+                <li><span class="nav-icon icon-4"></span>个人报销</li>
+                <li><span class="nav-icon icon-5"></span>通用账单</li>
+            </ul>
+        </div>
+        <div class="content">
+           <a class="back-btn" href="#">< 返回</a>
+            <h2>东航物流（总部）业务实体</h2>
+            <h3>员工报销</h3>
+            <p class="number">编号：2015E217705</p>
+            <table class="tb1">
+                <tr>
+                    <td class="gray">部门名称</td>
+                    <td>飞行部</td>
+                    <td class="gray">姓名</td>
+                    <td>李四</td>
+                    <td class="gray">职别</td>
+                    <td>总经理</td>
+                    <td class="gray">报销经办人</td>
+                    <td>张三</td>
+                </tr>
+                <tr>
+                    <td class="gray">总金额</td>
+                    <td>3333333</td>
+                    <td class="gray">员工可用借款额</td>
+                    <td>23423424234234</td>
+                    <td class="gray">币种</td>
+                    <td>CNY</td>
+                    <td class="gray">报销日期</td>
+                    <td>2015-06-33</td>
+                </tr>
+
+                <tr>
+                    <td class="gray">事由</td>
+                    <td colspan="3"></td>
+                    <td class="gray">附件数</td>
+                    <td >3</td>
+                    <td class="gray">电话</td>
+                    <td >11212123</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>行号</th>
+                    <th>费用大类名称</th>
+                    <th>费用小类名称</th>
+                    <th>金额</th>
+                    <th>摘要</th>
+                    <th>使用部门</th>
+                    <th>发票号</th>
+                    <th>付款说明</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>出差费</td>
+                    <td>1</td>
+                    <td>1000.32</td>
+                    <td>33</td>
+                    <td>飞行部</td>
+                    <td>1212121</td>
+                    <td>医药费报销</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th width="15%">行号</th>
+                    <th>费用大类名称</th>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="#" class="blue">20150678魔板.csv</a> </td>
+
+                </tr>
+            </table>
+
+
+
+            <p style="margin-left: 14px;">>显示报销申请的批注信息</p>
+
+            <table>
+                <tr>
+                    <th>审批人</th>
+                    <th>审批时间</th>
+                    <th>审批信息</th>
+                </tr>
+                <tr>
+                    <td>张三</td>
+                    <td>2015-03-22</td>
+                    <td>同意</td>
+                </tr>
+                <tr>
+                    <td>张三</td>
+                    <td>2015-03-22</td>
+                    <td>同意</td>
+                </tr>
+                <tr>
+                    <td>张三</td>
+                    <td>2015-03-22</td>
+                    <td class="red">提交</td>
+                </tr>
+            </table>
+
+
+            <ul class="ver-box">
+                <li><label>姓名</label><input></li>
+                <li><select>
+                    <option>--------请选择--------</option>
+                    <option>否</option>
+                </select></li>
+                <li><a href="#" class="btn">加签</a> </li>
+                <li><a href="#" class="blue">查看当前流程图</a> </li>
+                <li style="margin-left:65px;">
+                    <textarea placeholder="驳回意见："></textarea><br>
+                    <a href="javascript:;" class="disagree-btn">驳 回</a>
+                    <a href="javascript:;" class="agree-btn">同 意</a>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
