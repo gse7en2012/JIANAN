@@ -4,40 +4,13 @@
     <meta charset="UTF-8">
     <title>东航物流成本审批系统</title>
     <link rel="stylesheet" href="css/com.css"/>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="js/com.js"></script>
     <style>
-        .ver-box {
-            overflow: hidden;
-            margin-top: 15px;
-            margin-bottom: 30px;
-        }
-        .ver-box li {
-            float: left;
-            margin-bottom: 10px;
-            margin-left: 10px;
-            margin-top: 10px;
-            line-height: 26px;
-            font-size: 14px;
-        }
-        .ver-box li label {
-            float: left;
-            text-align: right;
-            width: 70px;
-            margin-right: 10px;
-        }
-        .ver-box input {
-            border: none;
-            background: #fff;
-            width: 156px;
-            height: 26px;
-        }
-        .ver-box select {
-            width: 156px;
-            border: none;
-            height: 26px;
-        }
-        .ver-box option {
-            text-align: center;
-        }
+        .ver-box {  margin-bottom: 30px; }
+
+        .ver-box li label {width: 70px; margin-right: 10px; }
+
         .submit-btn {
             position: absolute;
             width: 76px;
@@ -71,13 +44,13 @@
     <div class="main">
         <div class="nav">
             <ul class="nav-box">
-                <li class="nav-header">审批管理</li>
-                <li class="cur"><span class="nav-icon icon-1"></span>待办事项</li>
-                <li><span class="nav-icon icon-2"></span>已办事项</li>
-                <li><span class="nav-icon icon-3"></span>待办授权</li>
+                <li class="nav-header nav-header-cur">审批管理<span class="nav-header-icon"></span></li>
+                <li class="cur"><a href="#"><span class="nav-icon icon-1"></span>待办事项</a></li>
+                <li><a href="#"><span class="nav-icon icon-2"></span>已办事项</a></li>
+                <li><a href="#"><span class="nav-icon icon-3"></span>待办授权</a></li>
                 <li class="nav-header">申请管理</li>
-                <li><span class="nav-icon icon-4"></span>个人报销</li>
-                <li><span class="nav-icon icon-5"></span>通用账单</li>
+                <li><a href="#"><span class="nav-icon icon-4"></span>个人报销</a></li>
+                <li><a href="#"><span class="nav-icon icon-5"></span>通用账单</a></li>
             </ul>
         </div>
         <div class="content">

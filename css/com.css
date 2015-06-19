@@ -27,11 +27,14 @@ header,section,footer,nav{display: block;}
 .header-date{color: #000;font-size: 14px;text-align: right;margin-top: 40px;}
 .header-btn{color: #00132a;background: #d0dff1;float: right;padding: 8px 16px;border-radius: 5px;margin-top: -30px;text-decoration: none;}
 
-.main{width: 1310px;margin: 0 auto;overflow: hidden;background: #fff;margin-top: -32px;box-shadow: 1px 1px 30px #aaa;padding-bottom: 30px;margin-bottom: 50px;}
+.main{width: 1310px;margin: 0 auto;overflow: hidden;background: #fff;margin-top: -32px;box-shadow: 1px 1px 30px #aaa;padding-bottom: 30px;margin-bottom: 50px;position: relative;}
 
-.nav-box{float: left;margin-left: 20px;width: 220px;margin-top: 40px;}
+.nav-box{float: left;margin-left: 20px;width: 220px;top: 40px;position: absolute;}
+.nav-box-fixed{position: fixed;top:10px;}
+
 .nav-box li{height: 58px;line-height: 58px;text-align: center;color: #4270a7;background: #cedcec;border-bottom: 1px solid #fff;position: relative;}
 .nav-box li:hover,.nav-box .cur{background: #e9eef5;font-weight: bold;color: #4270a7;border-bottom: 1px solid #e9eef5;cursor: default}
+.nav-box a{text-decoration:none;color:#4270a7;}
 .nav-box .nav-header{background: #4270a7;border-radius: 3px;font-size: 18px;font-weight: bold;color: #fff;border-bottom: none;margin-top: -1px;}
 .nav-box .nav-header-cur{color: #ffa43b;}
 .nav-box .nav-header .nav-header-icon{display: none;}
@@ -49,7 +52,7 @@ header,section,footer,nav{display: block;}
 .nav-box li:hover .icon-3,.nav-box .cur .icon-3{background-position: 0 -66px;}
 .nav-box li:hover .icon-4,.nav-box .cur .icon-4{background-position: 0 -95px;}
 .nav-box li:hover .icon-5,.nav-box .cur .icon-5{background-position: 0 -124px;}
-.content{margin-left: 20px;margin-top: 40px;float: left;border-radius: 5px;background: #eff3f8;width: 1028px;position: relative;}
+.content{margin-left: 260px;margin-top: 40px;float: left;border-radius: 5px;background: #eff3f8;width: 1028px;position: relative;}
 
 .content-local{margin-top: -26px;margin-bottom: 6px;font-size: 14px;}
 .red{color: #cb0000;}
