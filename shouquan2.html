@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>东航物流成本审批系统</title>
     <link rel="stylesheet" href="css/com.css"/>
-    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="js/jqueryui.js "></script>
+    <script src="js/datepickaddon.js"></script>
     <script src="js/com.js"></script>
     <style>
 
@@ -46,8 +49,8 @@
 
             <form>
                 <ul class="ver-box">
-                    <li><label>授权开始日期</label><input></li>
-                    <li><label>授权结束日期</label><input></li>
+                    <li><label>授权开始日期</label><input class="date-picker" id="date1"></li>
+                    <li><label>授权结束日期</label><input class="date-picker" id="date2"></li>
 
                     <li><label>受委托人</label><select>
                         <option>--------请选择--------</option>
@@ -66,4 +69,24 @@
 
 </div>
 </body>
+<script>
+    $(function() {
+
+        $( ".date-picker" ).datetimepicker({
+            dateFormat: "yy-mm-dd"  ,
+            minDate: new Date()  ,
+            showSecond: true, //显示秒
+            timeFormat: 'hh:mm:ss',//格式化时间
+        });
+
+        $('#date2').click(function(){
+            if(!$('#date1').val()){
+                alert('请先选择开始时间');
+                $('#date1').focus()
+            }
+        })
+
+
+    });
+</script>
 </html>

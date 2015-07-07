@@ -8,7 +8,7 @@
 
             /*本页独有style*/
         .back-btn {
-            position: absolute;
+            display: block;
             width: 70px;
             height: 30px;
             line-height: 30px;
@@ -16,58 +16,41 @@
             color: #fff;
             background: url(images/spr.png) 0 -303px no-repeat;
             font-size: 16px;
-            left: 12px;
+            margin-left: 50px;
             top: 12px;
             border-radius: 3px;
             text-decoration: none;
             font-weight: bold;
             text-indent: -5px;
         }
-        .desc{font-size: 14px;line-height: 38px;margin-top: 60px;margin-left: 14px;}
+        .desc{font-size: 14px;line-height:48px;margin-top: 20px;margin-left: 50px;}
         .desc .block-gray{width: 20px;height: 20px;background: #a0a0a0;border-radius: 3px;display: inline-block;margin: 0 4px;position: relative;top: 4px;}
         .desc .block-blue{width: 20px;height: 20px;background: #4270a7;border-radius: 3px;display: inline-block;margin: 0 4px;position: relative;top: 4px;}
         .desc .block-orange{width: 20px;height: 20px;background: #ee921a;border-radius: 3px;display: inline-block;margin: 0 4px;position: relative;top:4px;}
 
 
-        .flow{overflow: hidden;margin: 40px;}
+        .flow{overflow: hidden;margin: 40px;width: 94%}
         .flow li{float: left;}
-        .flow .flow-start{width: 68px;height: 68px;line-height: 68px;text-align: center;font-size: 18px;font-weight: bold;color: #4270a7;background: url(images/spr.png) no-repeat -96px -1px;}
-        .flow .flow-end{width: 68px;height: 68px;line-height: 68px;text-align: center;font-size: 18px;font-weight: bold;color: #fff;background: url(images/spr.png) no-repeat -96px -75px;}
+        .flow .flow-start{width: 118px;height: 68px;line-height: 68px;text-align: center;font-size: 18px;font-weight: bold;color: #4270a7;background: url(images/spr.png) no-repeat -82px -6px;}
+        .flow .flow-end{width: 118px;height: 68px;line-height: 68px;text-align: center;font-size: 18px;font-weight: bold;color: #fff;background: url(images/spr.png) no-repeat -82px -77px;}
         .flow .flow-gray{width: 118px;height: 58px;line-height:58px;text-align: center;font-size: 18px;font-weight: bold;color: #4270a7;background: url(images/spr.png) no-repeat -83px -148px;margin-top: 5px;}
         .flow .flow-blue{width: 118px;height: 58px;line-height:58px;text-align: center;font-size: 18px;font-weight: bold;color: #fff;background: url(images/spr.png) no-repeat -83px -208px;margin-top: 5px;}
-        .flow .line{width: 100px;height: 68px;position: relative;}
+        .flow .flow-orange{width: 118px;height: 58px;line-height:58px;text-align: center;font-size: 18px;font-weight: bold;color: #fff;background: url(images/spr.png) no-repeat -83px -265px;margin-top: 5px;}
+        .flow .line{width: 103px;height: 68px;position: relative;}
         .flow .line-bg{width: 100%;height: 2px;background: url(images/spr.png) no-repeat -1px -351px;top: 32px;position: absolute;}
         .flow .line-1{width: 18px;height: 18px;position: absolute;z-index: 3;background: url(images/spr.png) no-repeat -1px -250px;  left: 50%;top: 50%; margin-left: -9px;margin-top: -9px; }
         .flow .line-2{width: 18px;height: 18px;position: absolute;z-index: 3;background: url(images/spr.png) no-repeat -19px -250px;  left: 50%;top: 50%; margin-left: -9px;margin-top: -9px; }
         .flow p{padding-top: 8px;line-height: 1.5;font-size: 14px;margin-left: 2px;}
 
+        .content-special{position: relative;margin-top: 50px;}
     </style>
 </head>
-<body>
-<div class="wrap">
-    <div class="header">
-        <div class="header-inner">
-            <div class="header-info">
-                <p><span class="header-icon"></span>当前登陆用户：<span class="bold">王建民</span></p>
-                <a class="header-btn" href="#">退出系统</a>
+<body style="background: #e9e9e9">
+<div class="wrap-no-bg" >
 
-                <p class="header-date">2015年5月28日 星期四</p>
-            </div>
-        </div>
-    </div>
     <div class="main">
-        <div class="nav">
-            <ul class="nav-box">
-                <li class="nav-header">审批管理</li>
-                <li class="cur"><span class="nav-icon icon-1"></span>待办事项</li>
-                <li><span class="nav-icon icon-2"></span>已办事项</li>
-                <li><span class="nav-icon icon-3"></span>待办授权</li>
-                <li class="nav-header">申请管理</li>
-                <li><span class="nav-icon icon-4"></span>个人报销</li>
-                <li><span class="nav-icon icon-5"></span>通用账单</li>
-            </ul>
-        </div>
-        <div class="content">
+
+        <div class="content-special">
             <a class="back-btn" href="#">注释<span class="arrow"></span> </a>
             <p class="desc">
                 1.<span class="block-gray"></span>灰色表示完成审批节点&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.<span class="block-blue"></span>蓝色表示当前审批节点&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.<span class="block-orange"></span>橙色表示未审批节点    <br>
@@ -79,7 +62,7 @@
             <ul class="flow">
                 <li>
                     <div class="flow-start">
-                        开始
+                        开&nbsp;始
                     </div>
                 </li>
                 <li class="line">
@@ -87,7 +70,7 @@
                     <span class="line-1"></span>
                 </li>
                 <li>
-                    <div class="flow-gray">
+                    <div class="flow-orange">
                         提交申请
                     </div>
                 </li>
@@ -128,15 +111,20 @@
                     <div class="flow-blue">
                         提交申请
                     </div>
-                    <p>提交人<br>660230_王念红</p>
+                    <p>提交人<br>660230_王念红<br>提交人<br>660230_王念红<br>660230_王念红<br>660230_王念红<br>660230_王念红<br><a href="#" class="blue">多任务</a> </p>
                 </li>
-				<li class="line">
+                <li>
+                    <div class="flow-orange">
+                        提交申请
+                    </div>
+                </li>
+                <li class="line">
                     <p class="line-bg"></p>
-                    <span class="line-1"></span>
+                    <span class="line-2"></span>
                 </li>
                 <li>
                     <div class="flow-end">
-                        结束
+                        结&nbsp;束
                     </div>
                 </li>
             </ul>
